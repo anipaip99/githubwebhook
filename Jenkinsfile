@@ -1,4 +1,6 @@
 
+
+
 pipeline {
     agent any
 
@@ -13,7 +15,7 @@ pipeline {
         stage('Build & Execute Script') {
             steps {
                 echo 'Running test.py...'
-                bat 'py test.py'
+                bat 'python test.py'
             }
         }
 
@@ -34,4 +36,5 @@ pipeline {
         }
     }
 }
+
 
